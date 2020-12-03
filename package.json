@@ -4,8 +4,8 @@
   "version": "0.1.1",
   "private": false,
   "author": {
-    "name": "Tushar Gugnani",
-    "email": "tushar@5balloons.info"
+    "name": "NickVolkmann",
+    "email": "NickVolkmann@web.de"
   },
   "repository": "https://github.com/NickVolkmann/vue-hello-world-simpl",
   "keywords": [
@@ -15,7 +15,7 @@
   ],
   "license": "MIT",
   "files": [
-    "dist/*"
+    "dist"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -32,10 +32,10 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0"
+    "eslint-plugin-vue": "^7.0.0-0",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
@@ -43,13 +43,18 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/vue3-essential",
+      "plugin:vue/essential",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
     "rules": {}
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   },
   "browserslist": [
     "> 1%",
