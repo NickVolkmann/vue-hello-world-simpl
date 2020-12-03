@@ -1,23 +1,29 @@
 {
   "name": "vue-hello-world-simpl",
   "description": "A simple vuejs Hello World plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "author": {
-      "name": "Tushar Gugnani",
-      "email": "tushar@5balloons.info"
+    "name": "Tushar Gugnani",
+    "email": "tushar@5balloons.info"
   },
   "repository": "https://github.com/NickVolkmann/vue-hello-world-simpl",
-  "keywords": ["keywords", "go", "here"],
+  "keywords": [
+    "keywords",
+    "go",
+    "here"
+  ],
   "license": "MIT",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-library" : "vue-cli-service build --target lib --name vue-hello-world-simpl ./src/install.js",
+    "build-library": "vue-cli-service build --target lib --name vue-hello-world-simpl ./src/install.js",
     "lint": "vue-cli-service lint"
   },
-  "main" : ".dist/vue-hello-world-simpl.common.js",
+  "main": ".dist/vue-hello-world-simpl.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
